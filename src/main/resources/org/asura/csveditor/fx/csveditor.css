@@ -1,0 +1,229 @@
+.table-view .list-view {
+    -fx-background-color: -fx-background;
+    -fx-padding: 1;
+}
+
+.table-view .list-cell {
+    -fx-padding: 1.0em 1.0em 1.0em 1.0em;
+}
+.table-view .list-cell:odd {
+    -fx-background: -fx-control-inner-background-alt;
+}
+
+.table-view .list-cell:even {
+    -fx-background: -fx-control-inner-background;
+}
+
+.open-icon {
+    -glyph-name: "FILE_IMPORT";
+    -glyph-size: 16px;
+}
+
+.file-document-icon {
+    -glyph-name: "FILE_DOCUMENT";
+    -glyph-size: 16px;
+}
+
+.config-icon {
+    -glyph-name: "CLIPBOARD";
+    -glyph-size: 16px;
+}
+
+.create-config-icon {
+    -glyph-name: "STAR";
+    -glyph-size: 10px;
+}
+
+.load-config-icon {
+    -glyph-name: "ARROW_UP_BOLD";
+    -glyph-size: 10px;
+}
+
+.save-config-icon {
+    -glyph-name: "ARROW_DOWN_BOLD";
+    -glyph-size: 10px;
+}
+
+.save-icon {
+    -glyph-name: "FILE_EXPORT";
+    -glyph-size: 16px;
+}
+
+.exit-icon {
+    -glyph-name: "EXIT_TO_APP";
+    -glyph-size: 16px;
+}
+
+.info-icon {
+    -glyph-name: "INFORMATION_OUTLINE";
+    -glyph-size: 16px;
+}
+
+.config-check-icon {
+    -glyph-name: "CLIPBOARD_CHECK";
+    -glyph-size: 16px;
+}
+
+.preferences-icon {
+    -glyph-name: "SETTINGS";
+    -glyph-size: 16px;
+}
+
+.delete-icon {
+    -glyph-name: "TABLE_ROW_REMOVE";
+    -glyph-size: 16px;
+}
+
+.add-icon {
+    -glyph-name: "TABLE_ROW_PLUS_AFTER";
+    -glyph-size: 16px;
+}
+
+.goto-icon {
+    -glyph-name: "SUBDIRECTORY_ARROW_RIGHT";
+    -glyph-size: 16px;
+}
+
+.export-icon {
+    -glyph-name: "BUG";
+    -glyph-size: 16px;
+}
+
+
+/* toolbar customization based on http://fxexperience.com/2012/02/customized-segmented-toolbar-buttons/ */
+
+#background {
+    -light-black: rgb(74, 75, 78);
+    -dark-highlight: rgb(87, 89, 92);
+    -dark-black: rgb(39, 40, 40);
+    -darkest-black: rgb(5, 5, 5);
+    -mid-gray: rgb(216, 222, 227);
+    -fx-background-color: -mid-gray;
+}
+
+.tool-bar {
+    -fx-base: -dark-black;
+    -fx-font-size: 12px;
+    -fx-background-color:
+            linear-gradient(to bottom, derive(-fx-base,-30%), derive(-fx-base,-60%)),
+            linear-gradient(to bottom, -light-black 2%, -dark-black 98%);
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: .6em 0.416667em .6em 0.416667em;
+    -fx-effect: dropshadow(two-pass-box,black,5,.2,0,0);
+}
+
+.tool-bar .open-icon {
+    -glyph-size: 16px;
+    -fx-fill: white;
+}
+
+.tool-bar .config-icon {
+    -glyph-size: 16px;
+    -fx-fill: white;
+}
+
+.menu-item .load-config-icon,
+.menu-item .save-config-icon,
+.menu-item .create-config-icon
+{
+    -fx-fill: white;
+}
+
+.tool-bar .save-icon {
+    -glyph-size: 16px;
+    -fx-fill: white;
+}
+
+.tool-bar .preferences-icon {
+    -glyph-size: 16px;
+    -fx-fill: white;
+}
+
+.tool-bar .exit-icon {
+    -glyph-size: 16px;
+    -fx-fill: white;
+}
+
+.tool-bar .delete-icon {
+    -glyph-size: 16px;
+    -fx-fill: white;
+}
+
+.tool-bar .add-icon {
+    -glyph-size: 16px;
+    -fx-fill: white;
+}
+
+.tool-bar .export-icon {
+    -glyph-size: 16px;
+    -fx-fill: white;
+}
+
+.segmented-button-bar .button {
+    -fx-background-color:
+            -darkest-black,
+            -dark-highlight,
+            linear-gradient(to bottom, -light-black 2%, -dark-black 98%);
+    -fx-background-insets: 0, 1 1 1 0, 2 1 1 1;
+    -fx-background-radius: 0;
+    -fx-padding: 0.4em 1.833333em 0.4em 1.833333em;
+}
+
+.segmented-button-bar .button.first {
+    -fx-background-insets: 0, 1, 2 1 1 1;
+    -fx-background-radius: 3 0 0 3, 2 0 0 2, 2 0 0 2;
+}
+
+.segmented-button-bar .button.last {
+    -fx-background-insets: 0, 1 1 1 0, 2 1 1 1;
+    -fx-background-radius: 0 3 3 0, 0 2 2 0, 0 2 2 0;
+}
+
+.segmented-button-bar .button:pressed {
+    -fx-background-color:
+            -darkest-black,
+            rgb(55, 57, 58),
+            linear-gradient(to top, -light-black 2%, -dark-black 98%);
+}
+.tool-bar .spacer {
+    -fx-padding: 0 5.417em 0 0;
+}
+
+.tooltip {
+    -fx-background-radius: 2 2 2 2;
+    -fx-background-color: linear-gradient(#eeeeee, #aaaaaa);
+    -fx-text-fill: black;
+    -fx-font-size: 12px;
+    -fx-padding: 10 10 10 10;
+}
+
+.keyword {
+    -fx-fill: purple;
+    -fx-font-weight: bold;
+}
+.semicolon {
+    -fx-font-weight: bold;
+}
+.paren {
+    -fx-fill: firebrick;
+    -fx-font-weight: bold;
+}
+.bracket {
+    -fx-fill: darkgreen;
+    -fx-font-weight: bold;
+}
+.brace {
+    -fx-fill: teal;
+    -fx-font-weight: bold;
+}
+.string {
+    -fx-fill: blue;
+}
+
+.comment {
+    -fx-fill: cadetblue;
+}
+
+.paragraph-box:has-caret {
+    -fx-background-color: #f2f9fc;
+}

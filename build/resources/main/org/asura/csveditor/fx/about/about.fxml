@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity"
+      minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" spacing="4.0"
+      xmlns="http://javafx.com/javafx/8.0.76-ea" xmlns:fx="http://javafx.com/fxml/1">
+    <opaqueInsets>
+        <Insets/>
+    </opaqueInsets>
+    <padding>
+        <Insets bottom="16.0" left="8.0" right="8.0" top="8.0"/>
+    </padding>
+    <Label text="Thanks for contributions:">
+        <font>
+          <Font size="18.0"/>
+        </font>
+        <VBox.margin>
+          <Insets top="8.0"/>
+        </VBox.margin>
+    </Label>
+    <Label text="AOE Takashi (https://github.com/aoetk)"/>
+    <Label text="Hasan Kara (https://github.com/haisi)"/>
+    <Label text="apixandru (https://github.com/apixandru)"/>
+    <Label text="3rd party software">
+        <VBox.margin>
+          <Insets top="8.0"/>
+        </VBox.margin>
+        <font>
+          <Font size="18.0"/>
+        </font>
+    </Label>
+    <ScrollPane fitToHeight="true" fitToWidth="true">
+        <GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0"/>
+                <ColumnConstraints hgrow="ALWAYS" minWidth="10.0"/>
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES"/>
+            </rowConstraints>
+            <padding>
+                <Insets bottom="4.0" left="8.0" right="8.0" top="4.0"/>
+            </padding>
+            <Label text="junit"/>
+            <Hyperlink onAction="#openLinkInBrowser" text="http://junit.org/" GridPane.columnIndex="1"/>
+            <Label text="mockito" GridPane.rowIndex="1"/>
+            <Hyperlink onAction="#openLinkInBrowser" text="http://mockito.org/" GridPane.columnIndex="1"
+                       GridPane.rowIndex="1"/>
+            <Label text="groovy" GridPane.rowIndex="2"/>
+            <Hyperlink onAction="#openLinkInBrowser" text="http://www.groovy-lang.org/" GridPane.columnIndex="1"
+                       GridPane.rowIndex="2"/>
+            <Label text="spring framework" GridPane.rowIndex="3"/>
+            <Hyperlink onAction="#openLinkInBrowser" text="https://spring.io/" GridPane.columnIndex="1"
+                       GridPane.rowIndex="3"/>
+            <Label text="FastCSV" GridPane.rowIndex="4"/>
+            <Hyperlink onAction="#openLinkInBrowser" text="https://github.com/osiegmar/FastCSV"
+                       GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+            <Label text="Gson" GridPane.rowIndex="5"/>
+            <Hyperlink onAction="#openLinkInBrowser" text="https://github.com/google/gson/"
+                       GridPane.columnIndex="1" GridPane.rowIndex="5"/>
+            <Label text="commons-validator" GridPane.rowIndex="6"/>
+            <Hyperlink onAction="#openLinkInBrowser" text="https://commons.apache.org/proper/commons-validator/"
+                       GridPane.columnIndex="1" GridPane.rowIndex="6"/>
+            <Label text="fontawesomefx" GridPane.rowIndex="7"/>
+            <Hyperlink onAction="#openLinkInBrowser" text="https://bitbucket.org/Jerady/fontawesomefx"
+                       GridPane.columnIndex="1" GridPane.rowIndex="7"/>
+            <Label text="ControlsFX" GridPane.rowIndex="8"/>
+            <Hyperlink onAction="#openLinkInBrowser" text="http://fxexperience.com/controlsfx/"
+                       GridPane.columnIndex="1" GridPane.rowIndex="8"/>
+            <Label text="Apache Log4j 2" GridPane.rowIndex="9"/>
+            <Hyperlink onAction="#openLinkInBrowser" text="http://logging.apache.org/log4j/2.x/"
+                       GridPane.columnIndex="1" GridPane.rowIndex="9"/>
+            <Label text="RichTextFX" GridPane.rowIndex="10"/>
+            <Hyperlink onAction="#openLinkInBrowser" text="https://github.com/TomasMikula/RichTextFX"
+                       GridPane.columnIndex="1" GridPane.rowIndex="10"/>
+        </GridPane>
+    </ScrollPane>
+
+</VBox>
